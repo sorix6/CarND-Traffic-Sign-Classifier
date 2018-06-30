@@ -18,29 +18,29 @@ The goals / steps of this project are the following:
 
 ## Rubric Points
 
-###Submission files
+### Submission files
 The solutions to the questions have been provided in the file Traffic_Sign_Classifier.ipynb
 The HTML output of the code has been provided in the file Traffic_Sign_Classifier.html
 The project writeup has been provided in the current file (WriteUp.md)
 The images downloaded from the internet have been provided in the folder downloaded-images
 
-###Dataset Summary
+### Dataset Summary
 A basic summary of the dataset has been provided:
 Number of training examples = 34799
 Number of testing examples = 12630
 Image data shape = (32, 32, 3)
 Number of classes = 43
 
-###Exploratory Visualization
+### Exploratory Visualization
 50 random images from the training set have been displayed
 
-###Preprocessing
+### Preprocessing
 In the preprocessing step, images have been 
  - Resized (only if needed - this step is only called on the images downlaoded from the internet)
  - Transformed to grayscale
  - Normalized using cv2.normalize with the type NORM_MINMAX
 
-###Model Architecture
+### Model Architecture
 The model architecture is the basic LeNet Architecture
  - Parameters: mu = 0 and sigma = 0.1
  - The model consists of 5 layers with the following sizes:
@@ -50,7 +50,7 @@ The model architecture is the basic LeNet Architecture
      - Layer 4: Fully Connected. Input = 120. Output = 84
      - Layer 5: Fully Connected. Input = 84. Output = 43
      
-###Model Training
+### Model Training
 The training has been done by using the AdamOptimizer
 
 Training parameters:
@@ -59,14 +59,14 @@ Training parameters:
     - Learning rate: 0.001
     - Dropout percentage: 0.5
     
-###Solution Approach
+### Solution Approach
 The solution has an accuracy of the validation set of over 93%
 
-###Acquiring New Images
+### Acquiring New Images
 A set of 8 new images downloaded from the internet have been provided in the downloaded-images folder
 All images are correctly classified (Test Accuracy = 1.000)
 
-###Model Certainty - Softmax Probabilities
+### Model Certainty - Softmax Probabilities
 Top five softmax probabilities for the predictions on the new images have been provided in the solution file
 
 
