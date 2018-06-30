@@ -32,9 +32,9 @@ Image data shape = (32, 32, 3)
 Number of classes = 43
 
 ### Exploratory Visualization
-![50 random images from the training set have been displayed](https://raw.https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/test-set.jpg)
+![50 random images from the training set have been displayed](https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/test-set.jpg)
 
-![A histogram of the distribution of signs in the three sets has been displayed](https://raw.https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/histogram.jpg)
+![A histogram of the distribution of signs in the three sets has been displayed](https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/histogram.jpg)
 
 
 
@@ -83,6 +83,18 @@ As previously stated, the quality of the downloaded images is high and so the ac
 
 ### Model Certainty - Softmax Probabilities
 Top five softmax probabilities for the predictions on the new images have been provided in the solution file
+
+Image | 1st probability | 2nd probability | 3rd probability | 4th probability | 5th probability 
+------------ | ------------- | ------------- | ------------- | ------------- | -------------
+Image 0 | 4: 100.00% | 0: 0.00% | 1: 0.00% | 18: 0.00% | 2: 0.00%
+Image 1 | 3: 99.75% | 5: 0.14% | 2: 0.11% | 12: 0.00% | 10: 0.00%
+Image 2 | 31: 70.56% | 23: 16.59% | 25: 10.42% | 29: 1.53% | 20: 0.79%
+Image 3 | 18: 100.00% | 26: 0.00% | 36: 0.00% | 25: 0.00% | 27: 0.00%
+Image 4 | 11: 100.00% | 27: 0.00% | 30: 0.00% | 18: 0.00% | 23: 0.00%
+Image 5 | 28: 40.51% | 30: 21.26% | 23: 18.57% | 29: 3.65% | 11: 3.50%
+Image 6 | 25: 100.00% | 29: 0.00% | 20: 0.00% | 35: 0.00% | 22: 0.00%
+Image 7 | 34: 96.44% | 38: 3.39% | 28: 0.07% | 32: 0.02% | 16: 0.01%
+
 
 
 
