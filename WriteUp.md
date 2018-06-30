@@ -32,13 +32,19 @@ Image data shape = (32, 32, 3)
 Number of classes = 43
 
 ### Exploratory Visualization
-50 random images from the training set have been displayed
+![50 random images from the training set have been displayed](https://raw.https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/test-set.jpg)
+
+![A histogram of the distribution of signs in the three sets has been displayed](https://raw.https://github.com/sorix6/CarND-Traffic-Sign-Classifier/images/histogram.jpg)
+
+
 
 ### Preprocessing
 In the preprocessing step, images have been 
- - Resized (only if needed - this step is only called on the images downlaoded from the internet)
+ - Resized (only if needed - this step is only called on the images downloaded from the internet)
  - Transformed to grayscale
- - Normalized using cv2.normalize with the type NORM_MINMAX
+ - Normalized using cv2.normalize with the type NORM_MINMAX (normalization is the process of bringing the range of pixel intensity values to a normal distribution, in the effort of standardizing the input)
+     
+All the preprocessing steps have been taken in order to standardize as much as possible the input data. This steps help reduce the variability between the training and the testing sets and in doing so, improve the learning.
 
 ### Model Architecture
 The model architecture is the basic LeNet Architecture
@@ -62,9 +68,18 @@ Training parameters:
 ### Solution Approach
 The solution has an accuracy of the validation set of over 93%
 
+- In the beginning, I started off with 10 epochs but the accuracy was very low (never passed 85%). Through repetitive steps, I have selected 25 epochs as the optimal value.
+- As the network was overfitting, the accuracy was around 91%, so I have added a dropout rate of 0.5
+
+
 ### Acquiring New Images
 A set of 8 new images downloaded from the internet have been provided in the downloaded-images folder
 All images are correctly classified (Test Accuracy = 1.000)
+
+The images downloaded from the internet are of very good quality so the network should be able to correctly classify them.
+I would expect more dificulty in determining the correct classification for the images: 3 (Wild animals crossing), 6 (Children crossing) and 7(Road work) because they are similar.
+
+As previously stated, the quality of the downloaded images is high and so the accuracy of tests is 100%, compared to the accuracy of validation of only 94%.
 
 ### Model Certainty - Softmax Probabilities
 Top five softmax probabilities for the predictions on the new images have been provided in the solution file
