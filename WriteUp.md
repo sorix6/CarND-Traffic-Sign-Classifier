@@ -32,8 +32,11 @@ Image data shape = (32, 32, 3)
 Number of classes = 43
 
 ### Exploratory Visualization
+
+#### 50 random images from the training set
 ![50 random images from the training set have been displayed](https://raw.githubusercontent.com/sorix6/CarND-Traffic-Sign-Classifier/master/images/test-set.JPG)
 
+#### Histogram of the distribution of traffic signs in the three sets
 ![A histogram of the distribution of signs in the three sets has been displayed](https://raw.githubusercontent.com/sorix6/CarND-Traffic-Sign-Classifier/master/images/histogram.JPG)
 
 
